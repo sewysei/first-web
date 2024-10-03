@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallax 
+{
+    background-image: url(assets/thelastfrontier.jpeg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header
+{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.profile-icon
+{
+    height: 50px;
+    width: 50px;
+    background-image: url(assets/GTE-i_ca0AEZ3gZ.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-keren
+{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;     
+    position: fixed;    
+    top: 100; 
+    width: 100%;
+}
+
+.navbar-keren h1
+{
+    padding: 10px;
+}
+
+.navbar-keren a :hover
+{
+    background-color: lightcyan;
+    opacity: 70%;
+}
+
+header hr
+{
+    width: 25%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.navbar-line
+{
+    text-align: center;
+    width: 100%;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+hr
+{
+    height: 1.5px;
+    background-color: black;
+    border: none;
+}
+
+#about h1
+{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+#about img
+{
+    width: 300px;
+}
+
+.image-button-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-button-container button {
+    height: 20%;
+    background-color: transparent;
+    border: none;
+    border-radius: 15%;
+    border: 1px solid white;;
+}
+
+.image-button-container button:hover {
+    height: 20%;
+    background-color: lightgray;
+    border: 1px solid white;
+    transition-delay: 150ms;
+}
+
+.image-button-container button p {
+    font-size: 50px;
+    font-weight: normal;
+    
+}   
+
+
+@media only screen and (min-width: 992px) {
+    .navbar-line
+    {
+        padding: 0 0.5em;
+        border-right: 2px solid black;
+        text-align: center;
+        
+    }
+
+    .line-only
+    {
+        border-right: 2px solid black;
+    }
+
+}
+
+
+
