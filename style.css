@@ -1,12 +1,15 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;;
 }
 
 .parallax 
 {
-    background-image: url(assets/thelastfrontier.jpeg);
+    /* background-image: url(assets/thelastfrontier.jpeg); */
     height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -73,7 +76,13 @@ header hr
 {
     text-align: center;
     width: 100%;
-    
+    padding: 0 0.5em;
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.line-only {
+    border-right: 2px solid black;
 }
 
 a
@@ -91,12 +100,10 @@ hr
     border: none;
 }
 
-#about h1
+#about
 {
     text-align: center;
-    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 
@@ -134,22 +141,32 @@ hr
     
 }   
 
+.profile-container
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
 
-@media only screen and (min-width: 992px) {
-    .navbar-line
-    {
-        padding: 0 0.5em;
-        border-right: 2px solid black;
-        text-align: center;
-        
-    }
-
-    .line-only
-    {
-        border-right: 2px solid black;
-    }
+.description
+{
+    padding-top: 20px;
 
 }
+
+.description h4
+{
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+
+    
+
+
 
 
 
