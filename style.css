@@ -9,7 +9,7 @@
 
 .parallax 
 {
-    /* background-image: url(assets/thelastfrontier.jpeg); */
+    background-image: url(assets/header2.jpg);
     height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -55,13 +55,29 @@ nav
 
 .navbar-keren h1
 {
-    padding: 10px;
+    margin: 10px;
 }
 
-.navbar-keren a :hover
-{
-    background-color: lightcyan;
-    opacity: 70%;
+.navbar-keren h1{
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-keren h1::before {
+    background: lightcyan;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.navbar-keren h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 header hr
@@ -105,6 +121,7 @@ hr
     text-align: center;
     font-optical-sizing: auto;
     font-style: normal;
+    border-bottom: 2px solid black;
 }
 
 #about img
@@ -121,7 +138,8 @@ hr
 }
 
 .image-button-container button {
-    height: 20%;
+    height: 50px;
+    width: 30px;
     background-color: transparent;
     border: none;
     border-radius: 15%;
@@ -129,14 +147,14 @@ hr
 }
 
 .image-button-container button:hover {
-    height: 20%;
+    height: 50px;
     background-color: lightgray;
     border: 1px solid white;
     transition-delay: 150ms;
 }
 
 .image-button-container button p {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: normal;
     
 }   
@@ -160,9 +178,13 @@ hr
 {
     text-align: center;
     font-weight: normal;
-    padding-top: 20px;
     width: 50%;
 
+}
+
+#profile
+{
+    padding-top: 50px;
 }
 
 .profile
@@ -181,10 +203,26 @@ hr
     text-align: start;
 }
 
-h3:hover 
-{
-    background-color: lightblue;
-    animation-direction: reverse;
+.answer-container h3 {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.answer-container h3::before {
+    background: lightcyan;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.answer-container h3:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .answer-container h3
@@ -198,7 +236,7 @@ h3:hover
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 .gap-hashtag-emoji
@@ -207,6 +245,7 @@ h3:hover
     flex-direction: column;
     gap: 28px;
 }
+
 
 
 
