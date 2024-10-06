@@ -13,19 +13,17 @@
 
 <body>
     <header class="parallax">
-        
-        <div class="profile-icon"></div>
-        
-            <div class="navbar-keren">
-                <hr/>
-                    <nav>   
-                            <p class="line-only"></p>
-                            <a href="#about" class="navbar-line"><h1>ABOUT</h1></a>
-                            <a href="#music" class="navbar-line"><h1>MUSIC</h1></a>
-                            <a href="#social" class="navbar-line"><h1>SOCIAL</h1></a>
-                    </nav>
-                <hr/>
-            </div>
+            <div id="navbar" class="navbar-keren">
+                <div class="profile-icon"></div>
+                    <hr/>
+                        <nav>   
+                                <p class="line-only"></p>
+                                <a href="#about" class="navbar-line"><h1>ABOUT</h1></a>
+                                <a href="#music" class="navbar-line"><h1>MUSIC</h1></a>
+                                <a href="#social" class="navbar-line"><h1>SOCIAL</h1></a>
+                        </nav>
+                    <hr/>
+                </div>
     </header>
 
 
@@ -116,17 +114,122 @@
 
 
     <div id="music">
-        <div>oakdoakoak</div>
-        <div>oakdoakoak</div>
-        <div>oakdoakoak</div>
-        <div>oakdoakoak</div>
-        <div>oakdoakoak</div>
+        <div class="music-container">
+            <div>
+            <h1>Top Music</h1>
+
+            </div>
+            
+            <div class="music-poster-container">
+                
+                <div class="track" data-src="assets/ビビデバ  (bibideba) 星街すいせい(official).mp3">
+                    <div class="track-info">
+                        <div>
+                            <img src="assets/bibideba poster.png" alt="bibideba">
+                        </div>
+
+                        <div class="music-identity">
+                        <h2>ビビデバ (bibideba)</h2>
+                        <p>2024</p>
+                        </div>
+                    </div>
+                    <audio class="audio-player" src="assets/ビビデバ  (bibideba) 星街すいせい(official).mp3"></audio> <!-- Tambahkan elemen audio -->
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <button class="play-btn">Play</button>
+                </div>
+            
+                <div class="track" data-src="assets/GHOST  星街すいせい(official).mp3">
+                    <div class="track-info">
+                        <div>
+                            <img src="assets/ghost poster.webp" alt="ghost">
+                        </div>
+                        
+                        <div class="music-identity">
+                        <h2>GHOST</h2>
+                        <p>2021</p>
+                        </div>
+                    </div>
+                    <audio class="audio-player" src="assets/GHOST  星街すいせい(official).mp3"></audio> 
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <button class="play-btn">Play</button>
+                </div>
+            
+                <div class="track" data-src="assets/Stellar Stellar  星街すいせい(official).mp3">
+                    <div class="track-info">
+                        <div>
+                            <img src="assets/stellar poster.jpeg" alt="ghost">
+                        </div>
+
+                        <div class="music-identity">
+                        <h2>Stellar Stellar</h2>
+                        <p>2021</p>
+                        </div>
+                    </div>
+                    <audio class="audio-player" src="assets/Stellar Stellar  星街すいせい(official).mp3"></audio>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <button class="play-btn">Play</button>
+                </div>
+
+                <div class="track" data-src="assets/soireeソワレ  星街すいせい(official).mp3">
+                    <div class="track-info">
+                
+                        <div>
+                            <img src="assets/soiree.png" alt="bibideba">
+                        </div>
+                
+                        <div class="music-identity">
+                            <h2>ソワレ (soirée)</h2>
+                            <p>2023</p>
+                        </div>
+                
+                    </div>
+                    <audio class="audio-player" src="assets/soireeソワレ  星街すいせい(official).mp3"></audio>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="track" data-src="assets/NEXT COLOR PLANET  星街すいせい(official).mp3">
+                    <div class="track-info">
+                        <div>
+                            <img src="assets/next color planet.webp" alt="ghost">
+                        </div>
+                
+                        <div class="music-identity">
+                            <h2>NEXT COLOR PLANET</h2>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                    <audio class="audio-player" src="assets/NEXT COLOR PLANET  星街すいせい(official).mp3"></audio>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="track" data-src="assets/tenkyuuu.mp3">
+                    <div class="track-info">
+                        <div>
+                            <img src="assets/tenkyuu.jpg" alt="ghost">
+                        </div>
+                
+                        <div class="music-identity">
+                            <h2>天球、彗星は夜を跨いで </h2>
+                            <h2>(Tenkyuu, Suisei wa Yoru wo Mataide)</h2>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                    <audio class="audio-player" src="assets/tenkyuuu.mp3"></audio>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <button class="play-btn">Play</button>
+                </div>
+             </div> 
+        </div>
+        
+        <audio id="audio-player" controls style="display:none;"></audio>
     </div>
 
     
 
     <div id="find-here">
-    
+        <p>adidjaidjaidj</p>
     </div>
 
     <footer>
