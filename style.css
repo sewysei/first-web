@@ -27,9 +27,9 @@ header
 {
     height: 50px;
     width: 50px;
-    background-image: url(assets/GTE-i_ca0AEZ3gZ.jpeg);
+    background-image: url(assets/profile.webp);
     background-size: cover;
-    background-position: left;
+    background-position: center;
     border-radius: 50%;
 }
 
@@ -91,9 +91,30 @@ nav
 /* Navbar ketika di-scroll (dengan background) */
 .navbar-keren.scrolled 
 {
-    background-color: rgba(0, 0, 0, 0.8);
-    color:white;
-    /* Warna background saat scroll */
+    background-color: #00082da5;
+}
+
+.navbar-keren.scrolled h1 
+{
+    color: #e2ac40;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-keren.scrolled h1::before {
+    background: palegoldenrod;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.navbar-keren.scrolled h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 header hr
@@ -113,7 +134,8 @@ header hr
     text-align: center;
 }
 
-.line-only {
+.line-only 
+{
     border-right: 2px solid black;
 }
 
@@ -137,13 +159,16 @@ hr
     text-align: center;
     font-optical-sizing: auto;
     font-style: normal;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     padding-top: 10px;
+    background-color: #041d56;
+    color: #e2ac40;
 }
 
 #about img
 {
     width: 300px;
+    
 }
 
 .image-button-container
@@ -162,14 +187,15 @@ hr
     background-color: transparent;
     border: none;
     border-radius: 15%;
-    border: 1px solid white;;
+    border: 1px solid transparent;
+    color: #e2ac40;
 }
 
 .image-button-container button:hover 
 {
     height: 50px;
-    background-color: lightgray;
-    border: 1px solid white;
+    background-color: #00082da5;
+    border: 1px solid transparent;
     transition-delay: 150ms;
 }
 
@@ -193,7 +219,8 @@ hr
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-left: 10px;
+    padding-left:   70px;
+    
 }
 
 .description h4
@@ -209,10 +236,12 @@ hr
     font-weight: 400;
     color: #333;
     margin-bottom: 20px;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #4a97cb;
     /* Green accent */
     padding-left: 15px;
     /* Padding for the quote */
+    color: #e2ac40;
+    
 }
 
 #profile
@@ -231,7 +260,7 @@ hr
     border-radius: 25px;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: #00082d;
 }
 
 
@@ -252,6 +281,7 @@ hr
     grid-template-columns: auto auto auto;
     justify-content: center;
     padding-top: 0px;
+    padding-right: 36px;
 }
 
 .gap-hashtag-emoji
@@ -268,12 +298,12 @@ hr
     padding-top: 20px;
     border-bottom: 2px solid black;
     padding-bottom: 30px;
-    
+    background-color: #041d56;
 }
 
 .music-container 
 {
-  background-color: #fff;
+  background-color: #00082d;
   padding: 20px;   
   border-radius: 15px;
   box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
@@ -284,7 +314,12 @@ hr
 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: #e2ac40;
+}
+
+.music-identity p 
+{
+  color: #e2ac40;
 }
 
 .music-poster-container
@@ -303,13 +338,13 @@ hr
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
-  background-color: #f9f9f9;
+  background-color: #266ca8;
   transition: background-color 0.3s ease;
 }
 
 .track:hover 
 {
-  background-color: #f1f1f1;
+  background-color: #4a97cb;
 }
 
 .track-info
@@ -324,13 +359,13 @@ hr
 .track-info h2 
 {
   font-size: 16px;
-  color: #333;
+  color: #e2ac40;
 }
 
 .track-info p 
 {
   font-size: 14px;
-  color: #888;
+  color: #e2ac40;
 }
 
 .track-info img
@@ -347,25 +382,10 @@ hr
     align-items: center;
 }
 
-.volume-control {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.volume-control label {
-    font-size: 14px;
-    color: #333;
-}
-
-
-
 .volume-slider {
     width: 100px;
     appearance: none;
-    background: #ddd;
+    background: grey;
     height: 4px;
     border-radius: 5px;
     outline: none;
@@ -376,7 +396,7 @@ hr
     appearance: none;
     width: 10px;
     height: 10px;
-    background: lightblue;
+    background: black;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -384,16 +404,16 @@ hr
 .volume-slider::-moz-range-thumb {
     width: 10px;
     height: 10px;
-    background: #4CAF50;
+    background: black;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .play-btn 
 {
-  background-color: #4CAF50;
+  background-color: black;
   width: 95%;
-  color: white;
+  color: #e2ac40;
   border: none;
   padding: 8px 16px;
   margin-top: 10px;
@@ -405,7 +425,8 @@ hr
 
 .play-btn:hover 
 {
-  background-color: #45a049;
+  background-color: #e2ac40;
+  color: black;
 }
 
 
