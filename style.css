@@ -9,7 +9,8 @@
 
 .parallax 
 {
-    background-image: url(assets/header2.jpg);
+    background: black;
+    background-image: url(assets/suihead.png);
     height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -21,6 +22,7 @@ header
 {
     padding-left: 10px;
     padding-top: 10px;
+    border-bottom: 2px solid black;
 }
 
 .profile-icon
@@ -184,7 +186,9 @@ hr
 
 #profile
 {
-    padding-top: 50px;
+    padding-top: 40px;
+    text-decoration: underline;
+    padding-bottom: 15px;
 }
 
 .profile
@@ -193,7 +197,7 @@ hr
     width: 100%;
     gap: 15px;
     border: 3px solid ;
-    border-radius: 10%;
+    border-radius: 25px;
     padding: 10px;
 }
 
