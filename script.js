@@ -3,28 +3,29 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+    showDivs(slideIndex += n);
 }
 
 function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("suisei-costume");
-  if (n > x.length) {slideIndex = 1};
-  if (n < 1) {slideIndex = x.length};
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  x[slideIndex-1].style.display = "block"; 
+    var i;
+    var x = document.getElementsByClassName("suisei-costume");
+    if (n > x.length) {slideIndex = 1};
+    if (n < 1) {slideIndex = x.length};
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
 }
+  
+    // setInterval(() => plusDivs(1), 5000);
 
-// Slide otomatis setiap 5 detik
-setInterval(() => plusDivs(1), 5000);
+
 
 // Mengatur navbar agar berubah ketika di-scroll
 const navbar = document.getElementById('navbar');
 
 window.onscroll = function() {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 220) {
     navbar.classList.add('scrolled');
     navbar.classList.remove('transparent');
   } else {
@@ -36,6 +37,10 @@ window.onscroll = function() {
 // Menambahkan class 'transparent' pada awal load
 window.onload = function() {
   navbar.classList.add('transparent');
+};
+
+window.onload = function() {
+  window.scrollTo(0, 0);  // Scrolls to the top of the page on load
 };
 
 const playButtons = document.querySelectorAll('.play-btn');
