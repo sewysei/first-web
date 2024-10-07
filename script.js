@@ -19,13 +19,11 @@ function showDivs(n) {
   
     // setInterval(() => plusDivs(1), 5000);
 
-
-
 // Mengatur navbar agar berubah ketika di-scroll
 const navbar = document.getElementById('navbar');
 
 window.onscroll = function() {
-  if (window.scrollY > 220) {
+  if (window.scrollY > 460) {
     navbar.classList.add('scrolled');
     navbar.classList.remove('transparent');
   } else {
@@ -84,3 +82,4 @@ volumeSliders.forEach(slider => {
     audioPlayer.volume = this.value; // Sesuaikan volume berdasarkan slider
   });
 });
+

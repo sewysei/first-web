@@ -4,15 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
 }
+
+
 
 .parallax 
 {
-    background-image: url(assets/suihead.png);
-    height: 300px;
+    background-image: url(assets/suisei-text-3.png);
+    height: 500px;
     background-attachment: fixed;
-    background-position: center;
+    background-position-y: -500px;
+    background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -163,6 +166,7 @@ hr
     padding-top: 10px;
     background-color: #041d56;
     color: #e2ac40;
+    box-shadow: 0 10px 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 #about img
@@ -218,8 +222,9 @@ hr
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-left:   70px;
+    text-align: justify;
+    padding-left: 80px;
+    width: 98%;
     
 }
 
@@ -296,7 +301,7 @@ hr
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     padding-bottom: 30px;
     background-color: #041d56;
 }
@@ -429,9 +434,10 @@ hr
   color: black;
 }
 
-
-
-
+#social
+{
+    background-color: #041d56;
+}
 
 
     
