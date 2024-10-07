@@ -11,7 +11,7 @@
 
 .parallax 
 {
-    background-image: url(assets/suisei-text-3.png);
+    background-image: url(assets/header/suisei-text-3.png);
     height: 500px;
     background-attachment: fixed;
     background-position-y: -500px;
@@ -345,6 +345,7 @@ hr
   border-radius: 10px;
   background-color: #266ca8;
   transition: background-color 0.3s ease;
+  gap: 3px;
 }
 
 .track:hover 
@@ -437,12 +438,68 @@ hr
 #social
 {
     background-color: #041d56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    color: #fff;
 }
 
+.social-container {
+    text-align: center;
+}
 
-    
+.social-container h1 {
+    font-size: 2.5rem;
+    color: #e2ac40;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
 
+.icon {
+    padding: 15px;
+    border-radius: 30%;
+    /* border: 1px solid #ddd; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    transition: all 0.3s ease;
+}
 
+#youtube {
+    background-image: url(assets/social/yotube.png);
+    background-size: cover;
+    background-position: center;
+    color: #ff0000;
+}
 
+#x {
+    background-image: url(assets/social/x.png);
+    background-size: cover;
+    background-position: center;
+}
 
+.icon i {
+    transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.icon:hover {
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-10px);
+    opacity: 50%;
+}
+
+.icon:hover i {
+    transform: scale(1.3);
+}
