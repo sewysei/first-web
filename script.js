@@ -1,5 +1,5 @@
 // Fungsi untuk mengganti slide secara otomatis
-var slideIndex = 1;
+var slideIndex = 2;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -71,7 +71,7 @@ function resetAllPlayers() {
     button.textContent = 'Play'; // Reset semua tombol ke Play
   });
 }
-
+  
 // Mengatur slider volume untuk setiap audio player
 const volumeSliders = document.querySelectorAll('.volume-slider');
 
