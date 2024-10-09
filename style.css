@@ -558,6 +558,11 @@ nav
     width: 200px;
 }
 
+.title-size
+{
+    font-size: 25px;
+}
+
 .profile-container 
 {
     display: flex;
@@ -572,9 +577,16 @@ nav
     padding-top: 10px;
 }
 
+.description h1
+{
+    font-size: 15px;
+}
+
 #profile 
 {
     padding-top: 10px;
+    font-size: 23px;
+    
 }
 
 .description-container
@@ -582,9 +594,13 @@ nav
     padding: 0px;
 }
 
+.description-container h3
+{
+    font-size: 15px;
+}
+
 .profile
 {
-    padding: 10px;
     gap: 10px;
 }
 
@@ -603,12 +619,6 @@ nav
 .music-container
 {
     padding: 10px;
-}
-
-.track-info h2
-{
-    font-size: 14px;
-    text-align: center;
 }
 
 .track-info p {
