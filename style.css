@@ -200,7 +200,7 @@ hr
     height: 50px;
     background-color: #00082da5;
     border: 1px solid transparent;
-    transition-delay: 150ms;
+    transition-delay: 100ms;
 }
 
 .image-button-container button p 
@@ -277,8 +277,15 @@ hr
 .answer-container h3
 {
     font-weight: normal;
+    text-decoration: none;
+    color: #e2ac40;
 }
 
+.answer-container a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #e2ac40;
+}
 
 .description-container
 {
@@ -524,4 +531,107 @@ hr
     50% {
         transform: translateX(10px) rotate(90deg);
     }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    /* Styles for mobile devices */
+
+.parallax {
+    background-image: url(assets/header/suisei-text-hp.png);
+    height: 280px;
+    background-position-y: 0px;
+    background-size: auto;
+}
+
+nav 
+{
+    font-size: 10px;
+}
+
+.navbar-keren {
+    padding-right: 0px;
+}
+
+#about img 
+{
+    width: 200px;
+}
+
+.profile-container 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.description
+{
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#profile 
+{
+    padding-top: 10px;
+}
+
+.description-container
+{
+    padding: 0px;
+}
+
+.profile
+{
+    padding: 10px;
+    gap: 10px;
+}
+
+.image-button-container
+{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.music-poster-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.music-container
+{
+    padding: 10px;
+}
+
+.track-info img {
+    width: 150px;
+}
+
+.track-info h2
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+.track-info p {
+    font-size: 12px;
+}
+
+#social
+{
+    padding-right: 30px;
+    gap: 15px;
+}
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablet devices */
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    /* Styles for desktop devices */
 }
