@@ -23,7 +23,7 @@ function showDivs(n) {
 const navbar = document.getElementById('navbar');
 
 window.onscroll = function() {
-  if (window.scrollY > 460) {
+  if (window.scrollY > 250) {
     navbar.classList.add('scrolled');
     navbar.classList.remove('transparent');
   } else {
