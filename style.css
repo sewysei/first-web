@@ -68,6 +68,7 @@ nav
     top: 100; 
     width: 100%;
     transition: background-color 0.3s ease;
+    z-index: 9999;
 }
 
 .navbar-keren h1
@@ -367,6 +368,9 @@ hr
   background-color: #266ca8;
   transition: background-color 0.3s ease;
   gap: 3px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .track:hover 
@@ -544,6 +548,17 @@ hr
 
     50% {
         transform: translateX(10px) rotate(90deg);
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
     }
 }
 
